@@ -24,5 +24,12 @@ function subtract()
 }
 function save()
 {
-    array.push(document.getElementById("savedNums").innerHTML = currentNum);
+    let object =
+        {
+            color: document.getElementById("savedNums").innerHTML,
+            number: document.getElementById("savedColor").innerHTML,
+        }
+        array.push(object);
+    array.push(document.getElementById("savedNums").innerHTML += currentNum);
+
 }
